@@ -28,8 +28,6 @@ export const Navbar = () => {
     { label: "Home", id: "hero" },
     { label: "About", id: "about" },
     { label: "Services", id: "services" },
-    { label: "Gallery", id: "gallery" },
-    { label: "Testimonials", id: "testimonials" },
     { label: "Contact", id: "contact" },
   ];
 
