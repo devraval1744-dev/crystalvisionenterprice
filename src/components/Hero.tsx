@@ -29,7 +29,7 @@ export const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto mt-[30px] px-4 flex flex-col align-center relative z-20">
+      <div className="container mx-auto mt-[50px] px-4 flex flex-col align-center relative z-20">
         <div className="max-w-3xl">
           <div className="flex flex-col gap-2 mb-6 animate-fade-in-up">
             <span className="text-primary font-semibold">Premium Security Solutions</span>
