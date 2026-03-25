@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Moon, Sun, Menu, X } from "lucide-react";
-import { useTheme } from "next-themes";
+import { Moon, Sun, Menu, X,Shield } from "lucide-react";
+import { useTheme } from "next-themes"; 
+import headerlogo from "../assets/Crystal Visiting - 2.jpeg"
+
 
 export const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -42,9 +44,10 @@ export const Navbar = () => {
           {/* Logo */}
           <button
             onClick={() => scrollToSection("hero")}
-            className="text-xl md:text-2xl font-bold text-gradient hover:opacity-80 transition-opacity"
+            className="text-xl md:text-2xl font-bold flex items-center gap-[10px] text-gradient hover:opacity-80 transition-opacity"
           >
-            Crystal Vision
+            <img className="block h-[45px] w-[40px]" src={headerlogo} />
+            <span className="text-primary font-semibold">Crystal Vision Enterprice</span>
           </button>
 
           {/* Desktop Navigation */}

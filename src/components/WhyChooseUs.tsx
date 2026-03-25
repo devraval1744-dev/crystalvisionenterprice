@@ -4,7 +4,7 @@ export const WhyChooseUs = () => {
   const reasons = [
     {
       icon: Award,
-      title: "10+ Years Experience",
+      title: "4+ Years Experience",
       description: "Over a decade of expertise in security solutions with 2000+ successful installations",
     },
     {
@@ -25,7 +25,7 @@ export const WhyChooseUs = () => {
     {
       icon: CheckCircle,
       title: "Guaranteed Installation",
-      description: "Professional installation with 2-year warranty on workmanship",
+      description: "Professional installation with 1-year warranty on workmanship",
     },
     {
       icon: TrendingUp,
@@ -86,10 +86,10 @@ export const WhyChooseUs = () => {
               Get Free Quote
             </a>
             <a
-              href="tel:+919876543210"
+              href="tel:+916355227404"
               className="inline-flex items-center justify-center gap-2 h-12 px-8 rounded-md font-semibold bg-accent text-accent-foreground hover:bg-accent/90 shadow-medium hover:shadow-strong transform hover:scale-105 transition-all"
             >
-              Call: +91 98765 43210
+              Call: +91 6355227404
             </a>
           </div>
         </div>

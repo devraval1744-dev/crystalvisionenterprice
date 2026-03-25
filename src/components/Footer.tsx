@@ -9,18 +9,18 @@ export const Footer = () => {
       { label: "DVR/NVR Setup", href: "#services" },
       { label: "Maintenance & AMC", href: "#services" },
       { label: "Smart Security", href: "#services" },
+      { label: "Intercom System", href: "#services" },
+      { label: "Fire Alarm System", href: "#services" }
     ],
     company: [
       { label: "About Us", href: "#about" },
-      { label: "Our Projects", href: "#gallery" },
-      { label: "Testimonials", href: "#testimonials" },
       { label: "Contact", href: "#contact" },
     ],
     support: [
       { label: "FAQ", href: "#faq" },
-      { label: "24/7 Support", href: "tel:+919876543210" },
+      { label: "24/7 Support", href: "tel:+916355227404" },
       { label: "Request Quote", href: "#contact" },
-      { label: "Emergency Service", href: "tel:+919876543210" },
+      { label: "Emergency Service", href: "tel:+916355227404" },
     ],
   };
 
@@ -50,18 +50,18 @@ export const Footer = () => {
                 className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors group"
               >
                 <Phone className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                <span>+91 98765 43210</span>
+                <span>+91 6355227404</span>
               </a>
               <a
                 href="mailto:info@crystalvision.in"
                 className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors group"
               >
                 <Mail className="w-4 h-4 group-hover:scale-110 transition-transform" />
-                <span>info@crystalvision.in</span>
+                <span>crystalvision3299@gmail.com</span>
               </a>
               <div className="flex items-start gap-3 text-muted-foreground">
                 <MapPin className="w-4 h-4 mt-1 flex-shrink-0" />
-                <span>123 Security Plaza, Tech Park, Bangalore, Karnataka - 560001</span>
+                <span>Crystal Vision Enterprice, Shop No. 9, Shreeji Complex, Satyam Colony Road, Near Airforce 2, Jamnagar, 361006</span>
               </div>
             </div>
           </div>
@@ -124,20 +124,7 @@ export const Footer = () => {
             © {currentYear} Crystal Vision Enterprise. All rights reserved.
           </p>
           
-          <div className="flex items-center gap-4">
-            {socialLinks.map((social, index) => (
-              <a
-                key={index}
-                href={social.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={social.label}
-                className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary hover:bg-primary hover:text-white transition-all hover:scale-110"
-              >
-                <social.icon className="w-5 h-5" />
-              </a>
-            ))}
-          </div>
+          
         </div>
       </div>
     </footer>

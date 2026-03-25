@@ -9,7 +9,7 @@ export const About = () => {
     },
     {
       icon: Award,
-      title: "10+ Years Experience",
+      title: "4+ Years Experience",
       description: "Proven track record in CCTV installation and maintenance",
     },
     {

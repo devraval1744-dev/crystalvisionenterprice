@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Shield, Phone, ArrowRight } from "lucide-react";
-import heroImage from "@/assets/hero-security.jpg";
+import heroImage from "@/assets/hero-security.webp";
 
 export const Hero = () => {
   const scrollToContact = () => {
@@ -29,10 +29,9 @@ export const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 relative z-20">
+      <div className="container mx-auto mt-[30px] px-4 flex flex-col align-center relative z-20">
         <div className="max-w-3xl">
-          <div className="flex items-center gap-2 mb-6 animate-fade-in-up">
-            <Shield className="w-6 h-6 text-primary" />
+          <div className="flex flex-col gap-2 mb-6 animate-fade-in-up">
             <span className="text-primary font-semibold">Premium Security Solutions</span>
           </div>
           
@@ -40,6 +39,9 @@ export const Hero = () => {
             Crystal Vision
             <span className="block text-gradient mt-2">Enterprise</span>
           </h1>
+          <>
+          
+          </>
 
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in-up" style={{ animationDelay: "0.2s" }}>
             Your Trusted Partner in Advanced CCTV Installation & Security Solutions Across India
@@ -55,7 +57,7 @@ export const Hero = () => {
               <ArrowRight className="w-5 h-5" />
             </Button>
             <Button variant="action" size="xl" asChild>
-              <a href="tel:+919876543210">
+              <a href="tel:+91 6355227404">
                 <Phone className="w-5 h-5" />
                 Call Now
               </a>
@@ -65,9 +67,9 @@ export const Hero = () => {
           {/* Features */}
           <div className="grid grid-cols-3 gap-6 mt-12 animate-fade-in-up" style={{ animationDelay: "0.5s" }}>
             {[
-              { label: "Years Experience", value: "10+" },
-              { label: "Projects Completed", value: "2000+" },
-              { label: "Happy Clients", value: "1500+" },
+              { label: "Years Experience", value: "4+" },
+              { label: "Projects Completed", value: "1500+" },
+              { label: "Happy Clients", value: "1200+" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
                 <div className="text-3xl md:text-4xl font-bold text-gradient mb-1">
@@ -81,8 +83,8 @@ export const Hero = () => {
       </div>
 
       {/* 3D Camera Animation - CSS only */}
-      <div className="absolute bottom-10 right-10 hidden lg:block z-20">
-        <div className="relative w-32 h-32 animate-float">
+      <div className="absolute bottom-10 right-[7%] hidden lg:block z-20">
+        <div className="relative w-32 h-32 ">
           <div className="absolute inset-0 bg-gradient-to-br from-primary to-tech-blue rounded-2xl transform rotate-12 opacity-20 blur-xl" />
           <div className="absolute inset-4 bg-card rounded-xl shadow-glow flex items-center justify-center">
             <Shield className="w-16 h-16 text-primary" />
@@ -90,5 +92,13 @@ export const Hero = () => {
         </div>
       </div>
     </section>
+    // <div>
+    //   <div style={{display:"flex", gap:"10px", }}>
+    //     <p>hii</p>
+    //     <p>hii</p>
+    //     <p>hii</p>
+    //     <p>hii</p>
+    //   </div>
+    // </div>
   );
 };

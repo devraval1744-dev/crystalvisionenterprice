@@ -1,9 +1,11 @@
-import { Camera, Wrench, HardDrive, Smartphone, Shield, Zap } from "lucide-react";
+import { Camera, Wrench, HardDrive, Smartphone, Shield, Zap, Phone, Flame } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import installationImg from "@/assets/service-installation.jpg";
 import dvrImg from "@/assets/service-dvr.jpg";
 import maintenanceImg from "@/assets/service-maintenance.jpg";
 import smartImg from "@/assets/service-smart.jpg";
+import intercomImg from "@/assets/service-intercom.jpg";
+import firealarmImg from "@/assets/service-firealarm.jpg";
 
 export const Services = () => {
   const services = [
@@ -36,16 +38,20 @@ export const Services = () => {
       features: ["Mobile App", "AI Detection", "Two-Way Audio", "Smart Alerts"],
     },
     {
-      icon: Shield,
-      title: "Security Consulting",
-      description: "Expert security assessment and consultation to identify vulnerabilities and recommend optimal solutions tailored to your specific needs.",
-      features: ["Risk Assessment", "Custom Solutions", "Expert Advice", "Site Survey"],
+      icon: Phone,
+      title: "Intercom System",
+      description:
+        "Reliable and modern intercom systems for secure communication within homes, offices, and buildings.",
+              image: intercomImg,
+      features: ["Audio Intercom", "Video Intercom", "Multi-Unit Support", "Door Lock Integration"],
     },
     {
-      icon: Zap,
-      title: "Wiring & Infrastructure",
-      description: "Professional wiring, cable management, and network infrastructure setup for seamless security system integration with minimal visual impact.",
-      features: ["Clean Installation", "Cable Management", "Network Setup", "Power Backup"],
+      icon: Flame,
+      title: "Fire Alarm System",
+      description:
+        "Advanced fire detection and alarm solutions ensuring early warning and maximum safety for your property.",
+              image: firealarmImg,      
+      features: ["Smoke Detectors", "Heat Sensors", "Control Panel Setup", "Emergency Siren"],
     },
   ];
 
@@ -72,13 +78,13 @@ export const Services = () => {
                   <img
                     src={service.image}
                     alt={service.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-full object-cover transition-transform duration-500 will-change-transform"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-card/90 to-transparent opacity-100 transition-opacity duration-300" />
                 </div>
               )}
               <CardHeader>
-                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center mb-4group-hover:bg-primary/20 transition-colors">
                   <service.icon className="w-7 h-7 text-primary" />
                 </div>
                 <CardTitle className="text-xl group-hover:text-primary transition-colors">

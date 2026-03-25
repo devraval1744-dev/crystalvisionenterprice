@@ -17,7 +17,7 @@ export const FAQ = () => {
     },
     {
       question: "Do you provide warranties?",
-      answer: "Yes! We provide manufacturer warranties on all equipment (typically 1-3 years) and a 2-year warranty on our installation workmanship. We also offer extended warranty options and AMC packages for long-term peace of mind.",
+      answer: "Yes! We provide manufacturer warranties on all equipment (typically 1-3 years) and a 1-year warranty on our installation workmanship. We also offer extended warranty options and AMC packages for long-term peace of mind.",
     },
     {
       question: "Can I view footage remotely?",
